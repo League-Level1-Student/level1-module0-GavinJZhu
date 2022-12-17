@@ -26,7 +26,7 @@ public class Houses {
 
 		public static void run () {
 			// Check the recipe to find out what code to put here
-			rob.setX(50);
+			rob.setX(25);
 			rob.setY(450);
 		}
 		public static void hou(int height) {
