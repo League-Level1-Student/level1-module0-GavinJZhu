@@ -16,10 +16,12 @@ public class ListOfGoals {
 		String goal = getListOfGoals();
 		//3. Call the appropriate method to get the number of goals you entered,
 		//   and using a pop-up display the number of goals
-		JOptionPane.showMessageDialog();
+		JOptionPane.showMessageDialog(null, "You have "+numberOfGoals+" goals.");
 		//4. Call the appropriate method to see if you put a lot of goals,
 		//   if you did put a lot of goals use a pop-up to say "Wow that's a lot of goals! Awesome!"
-		
+		if (isManyGoals()){
+			JOptionPane.showMessageDialog(null,"That's a lot of goals! Awesome!");
+		}
 	}
 	
 	static void createListOfGoals() {
