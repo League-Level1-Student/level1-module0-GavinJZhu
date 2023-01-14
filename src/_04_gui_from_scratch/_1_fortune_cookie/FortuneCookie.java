@@ -1,5 +1,4 @@
 package _04_gui_from_scratch._1_fortune_cookie;
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
@@ -7,13 +6,7 @@ import java.util.Random;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-
-public class fortune_cookie implements ActionListener {
-
-
-
-		  
-	
+public class FortuneCookie implements ActionListener {
 	public void showButton() {
         System.out.println("Button clicked");
         JFrame frame = new JFrame();
@@ -26,9 +19,8 @@ public class fortune_cookie implements ActionListener {
    }
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
-	
 		int rand = new Random().nextInt(5);
-		  if (rand == 5) {
+		  if (rand == 0) {
 			  JOptionPane.showMessageDialog(null, "You will make lots of money.");
 		  }
 		  else if (rand == 1) {
