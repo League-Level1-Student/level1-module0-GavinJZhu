@@ -15,8 +15,10 @@ public class JackInTheBox implements ActionListener {
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.add(imageLabel);
             frame.setVisible(true);
+            frame.pack();
         } catch (Exception e) {
             e.printStackTrace();
+            
         }
     }
 
@@ -37,11 +39,18 @@ public class JackInTheBox implements ActionListener {
         }
     }
 
+    int clickCounter = 0;
     @Override
     public void actionPerformed(ActionEvent e) {
     //add logic here (click 5 times
         //create variable nr of clicks
+    	clickCounter += 1;
+    	if (clickCounter == 10) {
+    		showPicture("jackInTheBox.png");
+    	}
+    
     }
+   ;
     public void showButton(){
         JFrame frame = new JFrame();
         JButton button = new JButton();
