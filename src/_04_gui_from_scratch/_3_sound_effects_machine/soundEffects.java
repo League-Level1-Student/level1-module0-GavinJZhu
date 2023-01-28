@@ -28,7 +28,9 @@ public class soundEffects implements ActionListener{
 	        frame.pack();
 	        
 	}
-	    String vineboom = "sawing-wood-daniel_simon.wav";
+	    String baDumTssss= "196196__paththeir__ba-dum-tishh-remix.wav";
+		String splat = "616476__deleted_user_13668154__splatwav.wav";
+		String deezNuts = "deez_nuts.wav";
 	    private void playSound(String soundFile) {
 		String path ="src/_04_gui_from_scratch/_3_sound_effects_machine/";
 				File	sound = new File(path+soundFile);
@@ -55,8 +57,13 @@ public class soundEffects implements ActionListener{
 	    @Override
 		public void actionPerformed(ActionEvent e) {
 	    	if (e.getSource() == sound1) {
-	            playSound(vineboom);
+	            playSound(baDumTssss);
 	        }
-	    	System.out.println("test");
+	    	if (e.getSource() == sound2) {
+				playSound(splat);
+			}
+			if (e.getSource() == sound3){
+				playSound(deezNuts);
+			}
 		}
 }
